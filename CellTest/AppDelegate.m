@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "EPDummyViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+
+    EPDummyViewController *vc = [[EPDummyViewController alloc]initWithNibName:NSStringFromClass([EPDummyViewController class]) bundle:[NSBundle mainBundle]];
+
+    self.window.rootViewController = vc;
+
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

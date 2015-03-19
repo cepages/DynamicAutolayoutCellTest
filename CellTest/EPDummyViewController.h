@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  EPDummyViewController.h
 //  CellTest
 //
 //  Created by Carlos Pages on 18/03/2015.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface EPDummyViewController : UIViewController
 
 @end
-
