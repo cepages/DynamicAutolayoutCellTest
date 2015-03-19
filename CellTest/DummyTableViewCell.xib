@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -13,23 +14,34 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" id="2rl-kR-ZC8">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2rl-kR-ZC8">
                         <rect key="frame" x="8" y="9" width="304" height="28"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MRz-qT-7Qd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRz-qT-7Qd">
                                 <rect key="frame" x="68" y="3" width="168" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.56078431370000004" green="0.56078431370000004" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="MRz-qT-7Qd" firstAttribute="top" secondItem="2rl-kR-ZC8" secondAttribute="top" constant="3" id="4Xl-5J-L1R"/>
+                            <constraint firstItem="MRz-qT-7Qd" firstAttribute="leading" secondItem="2rl-kR-ZC8" secondAttribute="leading" constant="68" id="Flm-c1-yRa"/>
+                            <constraint firstItem="MRz-qT-7Qd" firstAttribute="centerX" secondItem="2rl-kR-ZC8" secondAttribute="centerX" id="Vc0-k9-7tQ"/>
+                        </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="2rl-kR-ZC8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="4yt-KI-3Zf"/>
+                    <constraint firstItem="2rl-kR-ZC8" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Nd0-Zt-HEI"/>
+                    <constraint firstItem="2rl-kR-ZC8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="P7Y-ti-Fpg"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="2rl-kR-ZC8" secondAttribute="bottom" constant="-2" id="zha-pn-vzN"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="greyView" destination="2rl-kR-ZC8" id="faT-d0-Ppl"/>
                 <outlet property="label" destination="MRz-qT-7Qd" id="yEy-Uz-VDc"/>
             </connections>
             <point key="canvasLocation" x="846" y="659"/>

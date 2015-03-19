@@ -50,19 +50,28 @@
 {
     DummyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    NSLog(@"IndexPath %@, height:%f",indexPath,cell.height);
     cell.label.text = [NSString stringWithFormat:@"IndexPath %li",indexPath.row];
+    
+//    if(indexPath.row == 1)
+//    {
+//        cell.height = 124;
+//    }
+//    else{
+//        cell.height = 44;
+//    }
     
     return cell;
 }
 
 - (void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath*)indexPath
 {
+    
+
     DummyTableViewCell* cell = (DummyTableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
     cell.height = cell.height + 80.0;
+    
     [tableView beginUpdates];
-    
-    
+
     [tableView endUpdates];
 
 }

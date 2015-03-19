@@ -8,12 +8,41 @@
 
 #import "DummyTableViewCell.h"
 
+@interface DummyTableViewCell ()
+
+@property(nonatomic,strong)NSLayoutConstraint *heightConstraint;
+@property (weak, nonatomic) IBOutlet UIView *greyView;
+
+@end
+
 @implementation DummyTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code
-    self.height = 44;
+    _height = 44;
+    
+    self.heightConstraint = [NSLayoutConstraint constraintWithItem:self.contentView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationGreaterThanOrEqual toItem:nil attribute:0 multiplier:1.0 constant:self.height];
+    
+    self.heightConstraint.priority = 999;
+    [self.contentView addConstraint:self.heightConstraint];
+
 }
+
+//-(void)prepareForReuse
+//{
+//    self.contraint.constant = self.height;
+//}
+
+
+-(void)setHeight:(CGFloat)height
+{
+    _height = height;
+    self.heightConstraint.constant = self.height;
+}
+
+
+
+
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
@@ -21,9 +50,6 @@
     // Configure the view for the selected state
 }
 
--(CGSize)sizeThatFits:(CGSize)size
-{
-    return CGSizeMake(size.width, self.height);
-}
+
 
 @end
