@@ -12,6 +12,7 @@
 @interface EPDummyViewController ()<UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 
+@property(nonatomic,strong)NSMutableArray *listOfHeights;
 @end
 
 @implementation EPDummyViewController
@@ -24,6 +25,11 @@
     self.tableview.estimatedRowHeight = 44;
     self.tableview.rowHeight = UITableViewAutomaticDimension;
     // Do any additional setup after loading the view from its nib.
+    
+    self.listOfHeights = [NSMutableArray array];
+    for (int i = 0; i < 30; i++) {
+        [self.listOfHeights addObject:[NSNull null]];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,14 +58,12 @@
     
     cell.label.text = [NSString stringWithFormat:@"IndexPath %li",indexPath.row];
     
-//    if(indexPath.row == 1)
-//    {
-//        cell.height = 124;
-//    }
-//    else{
-//        cell.height = 44;
-//    }
-    
+    if ([[self.listOfHeights objectAtIndex:indexPath.row] isKindOfClass:[NSNull class]]) {
+        cell.height = 44;
+    }
+    else{
+        cell.height = [[self.listOfHeights objectAtIndex:indexPath.row] integerValue];
+    }
     return cell;
 }
 
@@ -67,8 +71,11 @@
 {
     
 
+    
     DummyTableViewCell* cell = (DummyTableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
     cell.height = cell.height + 80.0;
+    
+    [self.listOfHeights replaceObjectAtIndex:indexPath.row withObject:@(cell.height)];
     
     [tableView beginUpdates];
 

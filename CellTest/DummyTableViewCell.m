@@ -28,10 +28,11 @@
 
 }
 
-//-(void)prepareForReuse
-//{
-//    self.contraint.constant = self.height;
-//}
+-(void)prepareForReuse
+{
+    self.height = 44;
+    [super prepareForReuse];
+}
 
 
 -(void)setHeight:(CGFloat)height
