@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "EPDummyViewController.h"
+#import "CTDummyViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +22,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 
-    EPDummyViewController *vc = [[EPDummyViewController alloc]initWithNibName:NSStringFromClass([EPDummyViewController class]) bundle:[NSBundle mainBundle]];
+    CTDummyViewController *vc = [[CTDummyViewController alloc]initWithNibName:NSStringFromClass([CTDummyViewController class]) bundle:[NSBundle mainBundle]];
 
     self.window.rootViewController = vc;
 

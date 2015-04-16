@@ -6,16 +6,16 @@
 //  Copyright (c) 2015 IncunaLTD. All rights reserved.
 //
 
-#import "DummyTableViewCell.h"
+#import "CTDummyTableViewCell.h"
 
-@interface DummyTableViewCell ()
+@interface CTDummyTableViewCell ()
 
 @property(nonatomic,strong)NSLayoutConstraint *heightConstraint;
 @property (weak, nonatomic) IBOutlet UIView *greyView;
 
 @end
 
-@implementation DummyTableViewCell
+@implementation CTDummyTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code

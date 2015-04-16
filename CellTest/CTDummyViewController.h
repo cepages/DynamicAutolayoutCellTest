@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EPDummyViewController : UIViewController
+@interface CTDummyViewController : UIViewController
 
 @end

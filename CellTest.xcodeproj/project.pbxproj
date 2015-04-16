@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AE38AAC1AB98BF00033CC93 /* EPDummyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE38AAA1AB98BF00033CC93 /* EPDummyViewController.m */; };
-		0AE38AAD1AB98BF00033CC93 /* EPDummyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE38AAB1AB98BF00033CC93 /* EPDummyViewController.xib */; };
-		0AE38AB11AB98C510033CC93 /* DummyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE38AAF1AB98C510033CC93 /* DummyTableViewCell.m */; };
-		0AE38AB21AB98C510033CC93 /* DummyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE38AB01AB98C510033CC93 /* DummyTableViewCell.xib */; };
+		0AE38AAC1AB98BF00033CC93 /* CTDummyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE38AAA1AB98BF00033CC93 /* CTDummyViewController.m */; };
+		0AE38AAD1AB98BF00033CC93 /* CTDummyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE38AAB1AB98BF00033CC93 /* CTDummyViewController.xib */; };
+		0AE38AB11AB98C510033CC93 /* CTDummyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE38AAF1AB98C510033CC93 /* CTDummyTableViewCell.m */; };
+		0AE38AB21AB98C510033CC93 /* CTDummyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE38AB01AB98C510033CC93 /* CTDummyTableViewCell.xib */; };
 		0AF588F81AB986F800C2FCAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF588F71AB986F800C2FCAF /* main.m */; };
 		0AF588FB1AB986F800C2FCAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF588FA1AB986F800C2FCAF /* AppDelegate.m */; };
 		0AF589031AB986F800C2FCAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF589021AB986F800C2FCAF /* Images.xcassets */; };
@@ -29,12 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AE38AA91AB98BF00033CC93 /* EPDummyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPDummyViewController.h; sourceTree = "<group>"; };
-		0AE38AAA1AB98BF00033CC93 /* EPDummyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPDummyViewController.m; sourceTree = "<group>"; };
-		0AE38AAB1AB98BF00033CC93 /* EPDummyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EPDummyViewController.xib; sourceTree = "<group>"; };
-		0AE38AAE1AB98C510033CC93 /* DummyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyTableViewCell.h; sourceTree = "<group>"; };
-		0AE38AAF1AB98C510033CC93 /* DummyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DummyTableViewCell.m; sourceTree = "<group>"; };
-		0AE38AB01AB98C510033CC93 /* DummyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DummyTableViewCell.xib; sourceTree = "<group>"; };
+		0AE38AA91AB98BF00033CC93 /* CTDummyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDummyViewController.h; sourceTree = "<group>"; };
+		0AE38AAA1AB98BF00033CC93 /* CTDummyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDummyViewController.m; sourceTree = "<group>"; };
+		0AE38AAB1AB98BF00033CC93 /* CTDummyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CTDummyViewController.xib; sourceTree = "<group>"; };
+		0AE38AAE1AB98C510033CC93 /* CTDummyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDummyTableViewCell.h; sourceTree = "<group>"; };
+		0AE38AAF1AB98C510033CC93 /* CTDummyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDummyTableViewCell.m; sourceTree = "<group>"; };
+		0AE38AB01AB98C510033CC93 /* CTDummyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CTDummyTableViewCell.xib; sourceTree = "<group>"; };
 		0AF588F21AB986F800C2FCAF /* CellTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CellTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF588F61AB986F800C2FCAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AF588F71AB986F800C2FCAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -88,12 +88,12 @@
 			children = (
 				0AF588F91AB986F800C2FCAF /* AppDelegate.h */,
 				0AF588FA1AB986F800C2FCAF /* AppDelegate.m */,
-				0AE38AA91AB98BF00033CC93 /* EPDummyViewController.h */,
-				0AE38AAA1AB98BF00033CC93 /* EPDummyViewController.m */,
-				0AE38AAB1AB98BF00033CC93 /* EPDummyViewController.xib */,
-				0AE38AAE1AB98C510033CC93 /* DummyTableViewCell.h */,
-				0AE38AAF1AB98C510033CC93 /* DummyTableViewCell.m */,
-				0AE38AB01AB98C510033CC93 /* DummyTableViewCell.xib */,
+				0AE38AA91AB98BF00033CC93 /* CTDummyViewController.h */,
+				0AE38AAA1AB98BF00033CC93 /* CTDummyViewController.m */,
+				0AE38AAB1AB98BF00033CC93 /* CTDummyViewController.xib */,
+				0AE38AAE1AB98C510033CC93 /* CTDummyTableViewCell.h */,
+				0AE38AAF1AB98C510033CC93 /* CTDummyTableViewCell.m */,
+				0AE38AB01AB98C510033CC93 /* CTDummyTableViewCell.xib */,
 				0AF589021AB986F800C2FCAF /* Images.xcassets */,
 				0AF589041AB986F800C2FCAF /* LaunchScreen.xib */,
 				0AF588F51AB986F800C2FCAF /* Supporting Files */,
@@ -208,8 +208,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AF589061AB986F800C2FCAF /* LaunchScreen.xib in Resources */,
-				0AE38AAD1AB98BF00033CC93 /* EPDummyViewController.xib in Resources */,
-				0AE38AB21AB98C510033CC93 /* DummyTableViewCell.xib in Resources */,
+				0AE38AAD1AB98BF00033CC93 /* CTDummyViewController.xib in Resources */,
+				0AE38AB21AB98C510033CC93 /* CTDummyTableViewCell.xib in Resources */,
 				0AF589031AB986F800C2FCAF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,9 +229,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AF588FB1AB986F800C2FCAF /* AppDelegate.m in Sources */,
-				0AE38AAC1AB98BF00033CC93 /* EPDummyViewController.m in Sources */,
+				0AE38AAC1AB98BF00033CC93 /* CTDummyViewController.m in Sources */,
 				0AF588F81AB986F800C2FCAF /* main.m in Sources */,
-				0AE38AB11AB98C510033CC93 /* DummyTableViewCell.m in Sources */,
+				0AE38AB11AB98C510033CC93 /* CTDummyTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,21 +6,21 @@
 //  Copyright (c) 2015 IncunaLTD. All rights reserved.
 //
 
-#import "EPDummyViewController.h"
-#import "DummyTableViewCell.h"
+#import "CTDummyViewController.h"
+#import "CTDummyTableViewCell.h"
 
-@interface EPDummyViewController ()<UITableViewDataSource>
+@interface CTDummyViewController ()<UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 
 @property(nonatomic,strong)NSMutableArray *listOfHeights;
 @end
 
-@implementation EPDummyViewController
+@implementation CTDummyViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.tableview registerNib:[UINib nibWithNibName:NSStringFromClass([DummyTableViewCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"cell"];
+    [self.tableview registerNib:[UINib nibWithNibName:NSStringFromClass([CTDummyTableViewCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"cell"];
     
     self.tableview.estimatedRowHeight = 44;
     self.tableview.rowHeight = UITableViewAutomaticDimension;
@@ -54,7 +54,7 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    DummyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    CTDummyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
     cell.label.text = [NSString stringWithFormat:@"IndexPath %li",indexPath.row];
     
@@ -72,7 +72,7 @@
     
 
     
-    DummyTableViewCell* cell = (DummyTableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
+    CTDummyTableViewCell* cell = (CTDummyTableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
     cell.height = cell.height + 80.0;
     
     [self.listOfHeights replaceObjectAtIndex:indexPath.row withObject:@(cell.height)];

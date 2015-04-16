@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DummyTableViewCell : UITableViewCell
+@interface CTDummyTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *label;
 
 @property(nonatomic,assign)CGFloat height;
